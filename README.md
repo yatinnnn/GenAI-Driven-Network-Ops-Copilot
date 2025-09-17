@@ -12,41 +12,57 @@ Clone the repository and install the dependencies:
 ```bash
 git clone https://github.com/yatinnnn/GenAI-Driven-Network-Ops-Copilot.git
 cd GenAI-Driven-Network-Ops-Copilot
+```
 Backend Setup
+
+```bash
 cd backend
 pip install -r requirements.txt
+```
+
 Frontend Setup
+
+```bash
 cd frontend
 npm install
+```
+
 ⚙️ Environment Variables
 Create a .env.local file in the root directory and add:
 
-
+```bash
 OPENAI_API_KEY=your-openai-api-key
 DATABASE_URL=your-database-url
 REDIS_URL=your-redis-url
 NEXT_PUBLIC_API_URL=http://localhost:8000
-(Update values as per your configuration.)
+```
 
 🖥️ Running Locally
 Backend
 
+```bash
 cd backend
 python main.py
+```
 Frontend
 
+```bash
 cd frontend
 npm run dev
+```
+
 🐳 Run using Docker
 Build and run the application with Docker:
 
 
-
+```bash
 # Build image
 docker build -t network-copilot .
 
 # Run container
 docker run -p 3000:3000 --env-file .env network-copilot
+```
+
 📌 Usage
 The application offers the following features:
 
