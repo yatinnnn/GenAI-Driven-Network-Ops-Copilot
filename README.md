@@ -86,4 +86,6 @@ Extendable backend with modular services.
 🧪 Testing
 Run tests with:
 
+```bash
 pytest tests/
+```
